@@ -1,4 +1,4 @@
-#Pattern Builder: _DRAFT_
+#Pattern Builder
 
 A definição oficial do padrão Builder é: 
 _“O Padrão Builder fornece a separação da construção de um objeto complexo da sua representação, de forma que o mesmo processo de construção possa criar diferentes representações.”._
