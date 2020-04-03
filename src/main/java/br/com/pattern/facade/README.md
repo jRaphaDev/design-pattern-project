@@ -47,5 +47,24 @@ Apenas chamando o método ligar() da classe ComputadorFacade tem-se uma interfac
             ComputadorFacade computador = new ComputadorFacade();
             computador.ligar();
         }
+    }
+
+    public class ComputadorFacade {
     
+        private Cpu cpu;
+        private HardDrive hardDrive;
+        private Memoria memoria;
+    
+        public ComputadorFacade() {
+            this.cpu = new Cpu();
+            this.hardDrive = new HardDrive();
+            this.memoria = new Memoria();
+        }
+    
+        public void ligar() {
+            cpu.start();
+            hardDrive.read();
+            memoria.load();
+            cpu.execute();
+        }
     }
