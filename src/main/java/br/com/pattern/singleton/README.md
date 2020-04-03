@@ -1,14 +1,13 @@
 # Pattern Singleton: DRAFT
 
-A definição oficial do padrão Facade é: 
-_“O Padrão Singleton fornece ”._
+O Padrão Singleton garante: _“a existência de apenas uma instância de uma classe, mantendo um ponto global de acesso ao seu objeto.”_
 
 
 ### Caso de Uso
 ##### Conexao com banco de dados
 
 
-No exemplo abaixo podemos notar a .....
+No exemplo abaixo podemos ver um exemplo de criacao de uma classe que abre uma concexao com banco de dados
 
     public class ConnectionSigleton {
     
