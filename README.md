@@ -15,3 +15,5 @@ para auxiliar em algumas tomadas de decisões que precisamos ter no nosso dia a 
 
 2. Builder: [`br.com.pattern.builder.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/builder)
 
+3. Singleton: [`br.com.pattern.builder.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/singleton)
+
