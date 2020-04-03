@@ -11,22 +11,15 @@ No exemplo abaixo podemos ver um exemplo de criacao de uma classe que abre uma c
 
     public class ConnectionSigleton {
     
-        private static ConnectionSigleton unicaInstancia = new ConnectionSigleton();
+        private static final ConnectionSigleton instanciaUnica = new ConnectionSigleton();
         private static Connection connection;
     
         private ConnectionSigleton(){
-            ConnectionFactory factory = new ConnectionFactory();
-    
-            this.connection = factory.criarConexao();
-    
+            connection = new ConnectionFactory().criarConexao();
             System.out.println("instancia criada.");
         }
     
-        public static ConnectionSigleton getInstance() {
-            return unicaInstancia;
-        }
-    
-        public Connection getConnection(){
+        public static Connection getConnection(){
             return connection;
         }
     }
@@ -37,11 +30,11 @@ Executando metódo de criacao duas vezes de uma instancia unica ...
     
         public static void main(String[] args) {
             System.out.println("chamando a instancia de conexao, dever criar uma nova");
-            Connection connection = ConnectionSigleton.getInstance().getConnection();
+            Connection connection = ConnectionSigleton.getConnection();
             connection.create();
     
             System.out.println("chamando a instancia de conexao, nao deve criar instancia");
-            Connection connectionExistente = ConnectionSigleton.getInstance().getConnection();
+            Connection connectionExistente = ConnectionSigleton.getConnection();
             connectionExistente.create();
         }
     }
