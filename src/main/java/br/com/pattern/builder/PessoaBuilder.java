@@ -1,15 +1,20 @@
 package br.com.pattern.builder;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PessoaBuilder {
 
     private Pessoa pessoa;
     private Endereco endereco;
+    private List<Telefone> telefones;
+
 
     public PessoaBuilder() {
         this.pessoa = new Pessoa();
         this.endereco = new Endereco();
+        this.telefones = new ArrayList<>();
     }
 
     public static PessoaBuilder builder() {
@@ -58,8 +63,14 @@ public class PessoaBuilder {
         return this;
     }
 
+    public PessoaBuilder addFone(int ddd, int numero, Telefone.TipoFone tipoFone) {
+        this.telefones.add(new Telefone(ddd, numero, tipoFone));
+        return this;
+    }
+
     public Pessoa build(){
         this.pessoa.setEndereco(this.endereco);
+        this.pessoa.setTelefones(this.telefones);
         return this.pessoa;
     }
 

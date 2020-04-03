@@ -2,6 +2,8 @@ package br.com.pattern.builder;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Application {
 
@@ -28,6 +30,17 @@ public class Application {
 
         pessoa.setEndereco(endereco);
 
+        List<Telefone> telefones = new ArrayList<>();
+
+        Telefone residencial = new Telefone(51, 32221236, Telefone.TipoFone.RESIDENCIAL);
+
+        Telefone celular = new Telefone(51, 99623632, Telefone.TipoFone.CELULAR);
+
+        telefones.add(residencial);
+        telefones.add(celular);
+
+        pessoa.setTelefones(telefones);
+
         System.out.println("criado objeto pessoa atraves do builder " + pessoa.toString());
     }
 
@@ -41,6 +54,8 @@ public class Application {
                 .comBairro("Centro")
                 .comCidade("Porto Alegre")
                 .comPais("Brasil")
+                .addFone(11, 99999999, Telefone.TipoFone.RESIDENCIAL)
+                .addFone(11, 999999999, Telefone.TipoFone.CELULAR)
                 .build();
 
         System.out.println("criado objeto pessoa atraves do builder " + pessoa.toString());

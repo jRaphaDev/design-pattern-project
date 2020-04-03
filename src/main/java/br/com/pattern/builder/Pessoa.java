@@ -1,6 +1,7 @@
 package br.com.pattern.builder;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Pessoa {
 
@@ -8,6 +9,7 @@ public class Pessoa {
     private String sobrenome;
     private LocalDate dataNascimento;
     private Endereco endereco;
+    private List<Telefone> telefones;
 
     public Pessoa() {
     }
@@ -44,6 +46,14 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
+    }
+
     @Override
     public String toString() {
         return "Pessoa{" +
@@ -51,6 +61,7 @@ public class Pessoa {
                 ", sobrenome='" + sobrenome + '\'' +
                 ", dataNascimento=" + dataNascimento +
                 ", endereco=" + endereco +
+                ", telefones=" + telefones +
                 '}';
     }
 }
