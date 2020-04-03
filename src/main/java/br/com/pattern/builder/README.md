@@ -1,4 +1,4 @@
-#Pattern Builder
+# Pattern Builder
 
 A definição oficial do padrão Builder é: 
 _“O Padrão Builder fornece a separação da construção de um objeto complexo da sua representação, de forma que o mesmo processo de construção possa criar diferentes representações.”._
@@ -77,7 +77,7 @@ Além destes, o atributo endereco, correspondente a classe Endereco.
     }
 
 
-##### Sem Builder
+#### Sem Builder
 
 Vamos criar um objeto Pessoa a partir da classe Pessoa. 
 Como se pode notar, é necessário criar uma instancia para a classe Pessoa e outra para a classe Endereco.
@@ -119,7 +119,7 @@ Isto faz com que varias linhas de códigos sejam necessárias.
     }
     
     
-##### Sem Builder
+#### Com Builder
 
 Usando o padrão Builder podemos facilitar a criação de um objeto pessoa, deixando que as instancias das classes envolvidas, assim como, 
 a lista de telefones sejam criadas em um ponto central, que é a classe PessoaBuilder.

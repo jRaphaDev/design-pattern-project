@@ -11,3 +11,5 @@ para auxiliar em algumas tomadas de decisões que precisamos ter no nosso dia a 
 ## Patterns
 1. Facade: [`br.com.pattern.facade.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/facade)
 
+2. Builder: [`br.com.pattern.builder.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/builder)
+
