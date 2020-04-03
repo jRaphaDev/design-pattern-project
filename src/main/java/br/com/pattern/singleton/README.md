@@ -31,3 +31,28 @@ No exemplo abaixo podemos notar a .....
             return connection;
         }
     }
+
+Executando metódo de criacao duas vezes de uma instancia unica ...
+
+    public class Application {
+    
+        public static void main(String[] args) {
+            System.out.println("chamando a instancia de conexao, dever criar uma nova");
+            Connection connection = ConnectionSigleton.getInstance().getConnection();
+            connection.create();
+    
+            System.out.println("chamando a instancia de conexao, nao deve criar instancia");
+            Connection connectionExistente = ConnectionSigleton.getInstance().getConnection();
+            connectionExistente.create();
+        }
+    }
+    
+Com isso a responsta que temos é ....
+
+    chamando a instancia de conexao, dever criar uma nova
+    criando conexao ...
+    instancia criada.
+    objeto criado com sucesso.
+    chamando a instancia de conexao, nao deve criar instancia
+    objeto criado com sucesso.
+    
