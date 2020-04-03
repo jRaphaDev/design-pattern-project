@@ -8,7 +8,37 @@ _“O Padrão Facade fornece uma interface unificada para um conjunto de interfa
 ### Caso de Uso
 ##### Computador
 
- 
+
+No exemplo abaixo podemos notar a quantidade de classes e métodos envolvidos quando precisamos inicializar o computador.
+Toda essa complexidade é exposta ao cliente que poderia chamar todas essas classes e cada um dos métodos das classes para realizar a tarefa de inicializar o computador. 
+    
+    public class Cpu {
+    
+        public void start() {
+            System.out.println("inicialização inicial");
+        }
+        public void execute() {
+            System.out.println("executa algo no processador");
+        }
+    }
+    
+    public class HardDrive {
+    
+        public void read() {
+            System.out.println("lê dados do HD");
+        }
+    }
+    
+    public class Memoria {
+    
+        public void load() {
+            System.out.println("carrega dados na memória");
+        }
+    }
+
+No entanto, ao usar uma Facade encapsulamos essa complexidade oferecendo uma interface simples e unificada ao cliente evitando acoplamento e complexidade. 
+Apenas chamando o método ligar() da classe ComputadorFacade tem-se uma interface simples que diz o que ela faz exatamente, sem expor a complexidade envolvida na operação.
+
     package br.com.pattern.facade;
     
     public class Application {
