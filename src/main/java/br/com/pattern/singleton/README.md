@@ -1,11 +1,9 @@
-# Pattern Singleton: DRAFT
-
+# Pattern Singleton
 O Padrão Singleton garante: _“a existência de apenas uma instância de uma classe, mantendo um ponto global de acesso ao seu objeto.”_
 
 
 ### Caso de Uso
 ##### Conexao com banco de dados
-
 
 No exemplo abaixo podemos ver um exemplo de criacao de uma classe que abre uma concexao com banco de dados
 
@@ -24,7 +22,7 @@ No exemplo abaixo podemos ver um exemplo de criacao de uma classe que abre uma c
         }
     }
 
-Executando metódo de criacao duas vezes de uma instancia unica ...
+Executando metódo de criacao duas vezes de uma instancia unica:
 
     public class Application {
     
@@ -39,7 +37,7 @@ Executando metódo de criacao duas vezes de uma instancia unica ...
         }
     }
     
-Com isso a responsta que temos é ....
+Com isso a responsta que temos é:
 
     chamando a instancia de conexao, dever criar uma nova
     criando conexao ...
