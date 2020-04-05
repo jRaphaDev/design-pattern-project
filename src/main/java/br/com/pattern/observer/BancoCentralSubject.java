@@ -32,8 +32,7 @@ public class BancoCentralSubject implements Subject {
 
     @Override
     public void notifyObservers() {
-        for( Observer o :observers ){
-            o.update( menssagem );
-        }
+        observers.stream()
+                .forEach(observer -> observer.update(menssagem));
     }
 }
