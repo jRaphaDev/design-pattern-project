@@ -93,7 +93,8 @@ Agora vamos a execucao real do envio da menssagem:
             new BancoItauObserver(bancoCentral);
         }
     }
-    
+
+
     Banco Santander recebeu a menssagem: essa é a menssagem enviada
     Banco Bradesco recebeu a menssagem: essa é a menssagem enviada
     Banco Itau recebeu a menssagem: essa é a menssagem enviada
