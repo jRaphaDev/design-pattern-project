@@ -5,7 +5,8 @@ O Padrão Strategy: _"permite definir novas operações sem alterar as classes d
 ### Caso de Uso
 ##### Calculo de comissao de venda para destintos funcionarios
 
-No exemplo abaixo podemos ver enum de Cargos implementando o calculo de comissao de acordo com seu respectivo cargo:
+No exemplo abaixo podemos ver enum de Cargos implementando o calculo de comissao de acordo com seu respectivo cargo,
+se precisarmos adicionar um cargo a mais nao teriamos problemas nenhum afetar o calculo estipulado para outros cargos.
 
     package br.com.pattern.strategy;
     
