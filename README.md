@@ -19,3 +19,5 @@ para auxiliar em algumas tomadas de decisões que precisamos ter no nosso dia a 
 
 4. Observer: [`br.com.pattern.observer.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/observer)
 
+4. Strategy: [`br.com.pattern.strategy.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/strategy)
+

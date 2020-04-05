@@ -1,6 +1,7 @@
 package br.com.pattern.strategy;
 
 public enum Cargo implements Strategy {
+
     ATENDENTE {
         @Override
         public double calcularComissao(double valorVenda) {
