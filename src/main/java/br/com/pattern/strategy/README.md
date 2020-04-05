@@ -1,11 +1,11 @@
 # Pattern Strategy
-O Padrão Strategy garante: _“.....”_
+O Padrão Strategy: _"permite definir novas operações sem alterar as classes dos elementos sobre os quais opera._"
 
 
 ### Caso de Uso
 ##### Calculo de comissao de venda para destintos funcionarios
 
-No exemplo abaixo podemos....
+No exemplo abaixo podemos ver enum de Cargos implementando o calculo de comissao de acordo com seu respectivo cargo:
 
     package br.com.pattern.strategy;
     
@@ -51,7 +51,7 @@ No exemplo abaixo podemos....
         }
     }
 
-Executando o metódo .........:
+Executando o metódo:
 
     cpublic class Application {
      
