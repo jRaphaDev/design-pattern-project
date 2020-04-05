@@ -3,5 +3,4 @@
 O Padrão Singleton permine: _“....”_
 
 ### Caso de Uso
-##### TubeNews 
-
+##### Envio de menssagens do Banco Central para Outros bancos com Santander, Itau, Bradesco.

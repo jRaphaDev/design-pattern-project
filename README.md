@@ -17,3 +17,5 @@ para auxiliar em algumas tomadas de decisões que precisamos ter no nosso dia a 
 
 3. Singleton: [`br.com.pattern.singleton.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/singleton)
 
+4. Observer: [`br.com.pattern.observer.Application`](https://github.com/jRaphaDev/design-pattern-project/tree/master/src/main/java/br/com/pattern/observer)
+
